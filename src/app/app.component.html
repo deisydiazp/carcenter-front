@@ -1,0 +1,129 @@
+<div class="container m5">
+  <div class="row headerp">
+    <div class="logop col-md-8">
+      <div class="logo">
+        <img class="imagen-logo" src="./assets/img/logo.png" [routerLink]="['']">
+      </div>
+    </div>
+    <div class="auxiliar  col-md-4">
+      <div class="content-header">
+        <ul class="menusup">
+          <li class="lista-primero">
+            <a href="link">Preguntas frecuentes</a>
+          </li>
+          <li>
+            <a href="link">Contáctenos</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-header">
+        <div class="social">
+          <div>
+            <a href="https://twitter.com/CARCENTER_OFICIAL" target="_blank">
+              <img alt="Twitter" onmouseout="this.src='./assets/img/btn-twitter.jpeg' "
+                onmouseover="this.src='./assets/img/btn-twitterhover.jpg'" src="./assets/img/btn-twitter.jpeg">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/CARCENTEROficial" target="_blank">
+              <img alt="Facebook" onmouseout="this.src='./assets/img/btn-facebook.jpeg' "
+                onmouseover="this.src='./assets/img/btn-facebookhover.jpg'" src="./assets/img/btn-facebook.jpeg">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/channel/UCHILD3JQKuwcyWbz_sqXQWg" target="_blank">
+              <img alt="YouTube" onmouseout="this.src='./assets/img/btn-youtube.jpeg' "
+                onmouseover="this.src='./assets/img/btn-youtubehover.jpg'" src="./assets/img/btn-youtube.jpeg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light menu">
+    <li>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </li>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Facturaci&oacute;n</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/mantenimiento']">Mantenimientos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Administraci&oacute;n
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" [routerLink]="['/administracion/mecanico']">Mec&aacute;nicos</a>
+                <a class="dropdown-item" href="#">Clientes</a>
+                <a class="dropdown-item" href="#">Marcas</a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <div class="card card-content">
+    <router-outlet></router-outlet>
+    <div class="content_bottom">
+      <div class="actualizado"></div>
+      <div class="logos-inferior text-center">
+        <div class="region region-logos">
+          <div class="content">
+            <br>
+            <p> 
+              CARCENTER, Servicio de Mantenimiento
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="contacto_footer">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="content">
+            <p>
+              Centro de ayuda y servicios: 018000111111 Línea a nivel nacional
+              <br>
+              <a href="https://www.carcenter.com.co" style=" color: #dfe1e3;text-decoration: none;">www.carcenter.com.co</a>
+              <br />
+              Línea Bogotá: (1) 1111111
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 text-right">
+          <div class="content">
+              <p>
+                Av. Calle 11 No. 22 - 33/44
+              <br />
+                Oficina 403
+              <br />
+              PBX: (+57)(1) 111 1111
+            </p>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>

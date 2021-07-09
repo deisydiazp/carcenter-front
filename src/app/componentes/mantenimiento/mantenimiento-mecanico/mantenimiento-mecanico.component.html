@@ -1,0 +1,31 @@
+<div class="card" style="margin-bottom: 10px;">
+    <div class="card-body">
+        <div class="row">    
+            <div class="col-md-12 mt-5">
+                <span class="titulo-secundario">Asignaci&oacute;n Mec&aacute;nico</span>
+                <label>Mecanico Seleccionado:&nbsp;</label> {{seleccion?.primerNombre}} {{seleccion?.segundoNombre}} {{seleccion?.primerApellido}} {{seleccion?.segundoApellido}}
+                <br>
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col" style="width: 20%">Identificaci&oacute;n</th>
+                            <th scope="col" style="width: 70%">Nombre</th>
+                            <th scope="col" style="width: 10%">Seleccionar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let mecanico of mecanicos">
+                            <td> {{mecanico.tipoDocumento}} {{mecanico.documento}} </td>
+                            <td> {{mecanico.primerNombre}} {{mecanico.segundoNombre}} {{mecanico.primerApellido}} {{mecanico.segundoApellido}}</td>
+                            <td class="acciones text-center">
+                                <i (click)="onSeleccionar(mecanico)">Seleccionar</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+       </div>
+    </div>
+</div>

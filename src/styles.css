@@ -1,0 +1,370 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~animate.css/animate.min.css";
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+}
+
+html, body {
+    height: 100%;
+}
+
+.nw-editor {
+    height: 150px !important;
+}
+
+.btn-outline-primary {
+    color: #005587 !important;
+    border-color: #005587 !important;
+}
+
+.tooltip-runt .tooltip-inner {
+    background-color: white;
+    border: 1px solid #C8102E;
+    color: #707070;
+}
+
+.tooltip-runt .arrow::before {
+    border-top-color: #C8102E;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active {
+    color: #fff!important;
+    background-color: #005587;
+    border-color: #005587;
+    /*set the color you want here*/
+}
+
+.toolbar-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    height: 64px;
+    background-color: #f5f5f5;
+    color: #d0112b;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: #707070 !important;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-cell {
+    text-align: center;
+    padding: 6px !important;
+}
+
+.mat-header-cell {
+    text-align: center !important;
+}
+
+th.mat-header-cell {
+    padding: 5px !important;
+}
+
+.header {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.header_tit {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.header_tit_pop {
+    font-size: 21px;
+    padding-left: 10px;
+}
+
+.content {
+    position: relative;
+}
+
+.headerp {
+    background: #dcdcde url(./assets/img/fondo_header.jpg) no-repeat;
+    border-bottom: 3px solid #7c7c7e;
+}
+
+.headerp, .footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.headerp .logo {
+    position: relative;
+    padding-top: 37px;
+    padding-left: 52px;
+}
+
+.auxiliar {
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 0px;
+}
+
+.headerp .auxiliar {
+    text-align: right;
+    color: #464646;
+    padding-left: 70px;
+}
+
+.headerp .auxiliar .menusup {
+    width: 120%;
+    margin: 1rem;
+    padding: 0;
+    margin-bottom: 6px;
+    text-align: center;
+    position: relative;
+}
+
+.menusup {
+    font-family: Arial;
+}
+
+.headerp .auxiliar .social {
+    padding-top: 70px;
+    padding-right: 0;
+}
+
+.lista {
+    border-right: 1px solid rgba(171, 171, 171, 1.00);
+    padding: 2px;
+    display: inline-block;
+}
+
+.menusup {
+    font-size: 10px;
+}
+
+ul, ol {
+    list-style: none;
+    font-size: 9px;
+}
+
+footer {
+    display: block;
+}
+
+.footer {
+    font-size: 12px;
+    padding-top: 19px;
+    color: #dfe1e3;
+    background-color: #736f70;
+    clear: both;
+}
+
+.contenido-derecho a {
+    color: #dfe1e3;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.menu_aux {
+    padding: 25px 0;
+    -webkit-padding-start: 10px;
+    text-emphasis-color: #dfe1e3;
+    clear: both;
+}
+
+.menu_aux li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+    border-left: 1px solid #dfe1e3;
+}
+
+.menu_aux a {
+    color: #dfe1e3;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.titulo-secundario {
+    color: #d0112b !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 15px;
+}
+
+.titulo-modal {
+    border: 1px solid #959595;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.menu {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFF !important;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #707070;
+}
+
+.navigaton-item {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.navigaton-item:hover {
+    color: #d0112b !important;
+}
+
+.orden::before {
+    content: "\25be\25b4";
+    display: block;
+    padding-right: 1px;
+    color: #d0112b;
+    font-size: 1.2em;
+}
+
+.orden.asc::before {
+    content: "\25be";
+}
+
+.orden.desc::before {
+    content: "\25b4";
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.is-invalid {
+    border: 1px solid #dc3545;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #f9f9f9;
+}
+
+/* .form-control:disabled.fecha {
+    background-color: #FFF !important;
+} */
+
+.table-action {
+    min-width: 30px;
+    margin: 1px;
+}
+
+.datepicker {
+    z-index: 999 !important;
+}
+
+.ngb-tp-input {
+    width: 57px !important;
+}
+
+hr {
+    height: 1px;
+    margin-left: 5px;
+    margin-right: auto;
+    background-color: #ccc;
+    border: 1px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.detalle {
+    font-weight: bold;
+    display: block;
+}
+
+.detalle:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 80%;
+    top: 10%;
+    left: 0%;
+    background: #c60028;
+}
+
+.label-detalle {
+    font-size: 9pt;
+    margin-bottom: 0px;
+}
+
+.nav-pills .nav-link.active {
+    color: #d0112b;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link {
+    color: #d0112b;
+}
+
+.btn-outline-info.active, .btn-outline-info:active, .show>.btn-outline-info.dropdown-toggle {
+    box-shadow: 0 0 0 0.2rem rgb(58, 176, 195, .5) !important;
+    background-color: rgb(58, 176, 195);
+    color: #FFF
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show>.btn-info.dropdown-toggle {
+    box-shadow: 0 0 0 0.2rem rgb(58, 176, 195, .5) !important;
+    background-color: #0071b3 !important;
+}
+
+.detalle-inactivo {
+    border: 1px solid #ced4da;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.link-page {
+    color: #c8102e;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.page-item-text {
+    padding-top: 5px !important;
+}
+
+;
